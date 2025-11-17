@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<body style="background-color: rgb(215, 241, 198);">
+ 
+ <img src="/img/imagen.png" alt="imagen-logo" width="180">
+ <h1>Agende su cita</h1>
+
+ <form  name="formulario" method="post" action="/send/">
+  <fieldset>
+   
+  
+
+
+  <fieldset>
+   <legend>Datos del servicio</legend>
+   <h4>1- Servicio solicitado</h4>
+   <input type="text" name="informacion" placeholder="Informacion del servicio" required autofocus>
+
+   
+
+   <h4>2- Motivo de la consulta</h4>
+   <textarea rows="7" cols="40" name="comentario" placeholder="Escriba su situación"></textarea>
+
+   <h4>3- ¿Dispone de seguro médico?</h4>
+   <input type="radio" name="seguro" value="si"> Si
+   <input type="radio" name="seguro" value="no"> No
+  </fieldset>
+
+
+
+  <fieldset>
+   <legend>Datos Personales</legend>
+    1- Nombre: 
+    <input type="text" name="nombre" placeholder="Ejemplo: Jose Maria">
+
+    2- Apellido: 
+    <input type="text" name="apellido" placeholder="Ejemplo: Trinidad"> 
+
+    3- Cédula:  
+    <input type="number" name="cedula" placeholder="123-45678-000" required>
+
+    4- Sexo: 
+    <input type="radio" name="sexo" value="m"> M
+    <input type="radio" name="sexo" value="f"> F 
+
+    5- Teléfono: 
+    <input type="number" name="telefono" placeholder="809-000-0000" required>
+
+    6- Edad: 
+    <input type="number" name="edad" min="0" max="120" required placeholder="18">
+    <br><br>
+
+    7- Correo: 
+    <input type="email" name="correo" placeholder="ejemplo@gmail.com">
+  </fieldset>
+
+
+
+  <fieldset>
+   <legend>Horario Disponible</legend>
+   <h4>1- Día de la Semana</h4>
+   <input type="radio" name="semana" value="lunes"> Lunes
+   <input type="radio" name="semana" value="martes"> Martes
+   <input type="radio" name="semana" value="miercoles"> Miércoles
+   <input type="radio" name="semana" value="jueves"> Jueves
+   <input type="radio" name="semana" value="viernes"> Viernes
+   <input type="radio" name="semana" value="sabado"> Sábado
+
+   <br>
+
+   <h4>2- Hora</h4>
+   <input type="radio" name="hora" value="1"> 7 - 9 am
+   <input type="radio" name="hora" value="2"> 9 - 11 am
+   <input type="radio" name="hora" value="3"> 12 - 2 pm
+   <input type="radio" name="hora" value="4"> 2 - 4 pm
+   <input type="radio" name="hora" value="5"> 4 - 6 pm
+  </fieldset>
+
+  <br>
+
+  <button style="width:150px; height:50px; font-size:18px; cursor:pointer;">
+    Enviar
+  </button>
+
+  </fieldset>
+ </form>
+
+</body>
+</html>
